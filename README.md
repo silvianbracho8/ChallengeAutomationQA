@@ -7,9 +7,14 @@ Este proyecto contiene pruebas automatizadas para Mercado Libre, usando Playwrig
 ```bash
 npm install
 npx playwright install
----
 
-## ℹ️ Notas sobre pruebas fallidas intencionales
+## Casos de prueba automatizados
+
+- Búsqueda de iPhone 13 con almacenamiento específico.
+- Intento de compra que solicita ingreso de usuario.
+- Validación de datos de configuración y monedas desde la API pública.
+
+## Notas sobre pruebas fallidas intencionales
 
 Como parte de los requisitos del ejercicio, se incluyeron **dos escenarios diseñados para fallar** de forma controlada, con el objetivo de:
 
@@ -17,13 +22,11 @@ Como parte de los requisitos del ejercicio, se incluyeron **dos escenarios dise�
 - Generar capturas de pantalla automáticas con Playwright.
 - Cumplir con el requerimiento de mostrar errores en el reporte de pruebas.
 
-### Escenarios que fallan:
+## Escenarios que fallan:
+- Buscar iPhone 13 con almacenamiento específico
 
-1. `Buscar iPhone 13 con almacenamiento específico`  
-2. `Buscar un producto inexistente`
+- Buscar un producto inexistente
 
-Ambos fallan en el paso `Given que el usuario abre Mercado Libre`, generando un **timeout** al intentar abrir el sitio. Esto simula situaciones de red lenta o problemas de carga inicial.
-
-Las capturas de pantalla correspondientes se guardan en la carpeta `/screenshots/`.
+Ambos fallan en el paso Given que el usuario abre Mercado Libre, generando un timeout al intentar abrir el sitio. Esto simula situaciones de red lenta o problemas de carga inicial.
 
 ---
