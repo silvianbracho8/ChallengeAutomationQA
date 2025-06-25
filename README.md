@@ -5,5 +5,3 @@ Este proyecto contiene pruebas automatizadas para Mercado Libre, usando Playwrig
 ## Instalación
 
 ```bash
-npm install
-npx playwright install
